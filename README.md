@@ -4,6 +4,8 @@ An intelligent Research Paper Assistant that allows users to upload PDFs and cha
 
 ---
 
+![Chat Interface](images/Screenshot-1.png)
+
 ## ✨ Features
 
 - 📄 **PDF Upload & Processing** with improved document chunking
