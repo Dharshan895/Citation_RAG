@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Responsive -->
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Citation RAG</title>
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+    <div
+        class="sidebar"
+        id="sidebar"
+    >
+
+        <h2>History</h2>
+
+        <div id="history"></div>
+
+    </div>
+
+
+    <!-- =========================
+         CHAT AREA
+    ========================== -->
+    <div class="chat-area">
+
+
+        <!-- =========================
+             TOPBAR
+        ========================== -->
+        <div class="topbar">
+
+            <div class="topbar-left">
+
+                <!-- Toggle Sidebar -->
+                <button onclick="toggleSidebar()">
+                    ☰
+                </button>
+
+                <!-- New Chat -->
+                <button onclick="newChat()">
+                    ＋ New Chat
+                </button>
+
+            </div>
+
+            <!-- Logo -->
+            <div class="logo">
+                Citation RAG
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             CHAT MESSAGES
+        ========================== -->
+        <div id="chat-box"></div>
+
+
+        <!-- =========================
+             INPUT AREA
+        ========================== -->
+        <div class="input-area">
+
+            <!-- Hidden File Input -->
+            <input
+                type="file"
+                id="fileInput"
+                accept=".pdf"
+                hidden
+            >
+
+            <!-- Upload Button -->
+            <button
+                id="upload-btn"
+                onclick="uploadFile()"
+                title="Upload PDF"
+            >
+                📎
+            </button>
+
+            <!-- Message Input -->
+            <input
+                type="text"
+                id="message"
+                placeholder="Upload a PDF first..."
+                autocomplete="off"
+                disabled
+            >
+
+            <!-- Send Button -->
+            <button
+                id="send-btn"
+                onclick="sendMessage()"
+                title="Send Message"
+            >
+                ↑
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- =========================
+     SCRIPT
+========================== -->
+<script src="script.js"></script>
+
+</body>
+
+</html>
